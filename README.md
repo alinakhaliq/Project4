@@ -25,17 +25,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ### Files contained
 
-.circleci/config.yml contains circle ci jobs and builds
-Docker_out.txt - contains terminal output from running ./run_docker.sh
-Kubernetes_out.txt - contains terminal output from running ./run_kubernetes.sh
-Dockerfile - contains instructions to build docker image
-Makefile - installs the dependencies for the project
-app.py - source code which also contains an additional prediction log statement
-Make_prediction.sh - sends input data to the containerised port via the port listed
-Requirements.txt - includes project dependencies
-Run_docker.sh - contains instructions to run and build the docker image outlined in the Dockerfile
-Run_kubernetes.sh - deploys the application to kubernetes
-Upload_docker.sh - uploads the built image to docker
+.circleci/config.yml contains circle ci jobs and builds 
+Docker_out.txt - contains terminal output from running ./run_docker.sh 
+Kubernetes_out.txt - contains terminal output from running ./run_kubernetes.sh 
+Dockerfile - contains instructions to build docker image 
+Makefile - installs the dependencies for the project 
+app.py - source code which also contains an additional prediction log statement 
+Make_prediction.sh - sends input data to the containerised port via the port listed 
+Requirements.txt - includes project dependencies 
+Run_docker.sh - contains instructions to run and build the docker image outlined in the Dockerfile 
+Run_kubernetes.sh - deploys the application to kubernetes 
+Upload_docker.sh - uploads the built image to docker 
 
 ### Setup the Environment
 
@@ -48,7 +48,7 @@ brew install hadolint <- install hadolint on mac
 brew install virtualbox --cask <- install virtual box on mac
 install minikube following instructions: https://minikube.sigs.k8s.io/docs/start/
 
-### Running `app.py`
+### Running app.py
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
