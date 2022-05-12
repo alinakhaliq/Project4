@@ -23,18 +23,30 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ---
 
-## Setup the Environment
+### Files contained
 
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
-```bash
-python3 -m pip install --user virtualenv
-# You should have Python 3.7 available in your host. 
-# Check the Python path using `which python3`
-# Use a command similar to this one:
-python3 -m virtualenv --python=<path-to-Python3.7> .devops
-source .devops/bin/activate
-```
-* Run `make install` to install the necessary dependencies
+.circleci/config.yml contains circle ci jobs and builds
+Docker_out.txt - contains terminal output from running ./run_docker.sh
+Kubernetes_out.txt - contains terminal output from running ./run_kubernetes.sh
+Dockerfile - contains instructions to build docker image
+Makefile - installs the dependencies for the project
+app.py - source code which also contains an additional prediction log statement
+Make_prediction.sh - sends input data to the containerised port via the port listed
+Requirements.txt - includes project dependencies
+Run_docker.sh - contains instructions to run and build the docker image outlined in the Dockerfile
+Run_kubernetes.sh - deploys the application to kubernetes
+Upload_docker.sh - uploads the built image to docker
+
+### Setup the Environment
+
+Change to working directory
+python3 -m venv ~/.devops
+source ~/.devops/bin/activate
+make install <- to install dependencies
+install docker
+brew install hadolint <- install hadolint on mac
+brew install virtualbox --cask <- install virtual box on mac
+install minikube following instructions: https://minikube.sigs.k8s.io/docs/start/
 
 ### Running `app.py`
 
@@ -48,3 +60,4 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
