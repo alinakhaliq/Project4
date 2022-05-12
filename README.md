@@ -39,13 +39,13 @@ Upload_docker.sh - uploads the built image to docker<br/>
 
 ### Setup the Environment
 
-Change to working directory
-python3 -m venv ~/.devops
-source ~/.devops/bin/activate
-make install <- to install dependencies
-install docker
-brew install hadolint <- install hadolint on mac
-brew install virtualbox --cask <- install virtual box on mac
+Change to working directory<br/>
+python3 -m venv ~/.devops<br/>
+source ~/.devops/bin/activate<br/>
+make install <- to install dependencies<br/>
+install docker<br/>
+brew install hadolint <- install hadolint on mac<br/>
+brew install virtualbox --cask <- install virtual box on mac<br/>
 install minikube following instructions: https://minikube.sigs.k8s.io/docs/start/
 
 ### Running app.py
