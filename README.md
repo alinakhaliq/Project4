@@ -25,17 +25,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ### Files contained
 
-.circleci/config.yml contains circle ci jobs and builds 
-Docker_out.txt - contains terminal output from running ./run_docker.sh 
-Kubernetes_out.txt - contains terminal output from running ./run_kubernetes.sh 
-Dockerfile - contains instructions to build docker image 
-Makefile - installs the dependencies for the project 
-app.py - source code which also contains an additional prediction log statement 
-Make_prediction.sh - sends input data to the containerised port via the port listed 
-Requirements.txt - includes project dependencies 
-Run_docker.sh - contains instructions to run and build the docker image outlined in the Dockerfile 
-Run_kubernetes.sh - deploys the application to kubernetes 
-Upload_docker.sh - uploads the built image to docker 
+.circleci/config.yml contains circle ci jobs and builds<br/>
+Docker_out.txt - contains terminal output from running ./run_docker.sh<br/>
+Kubernetes_out.txt - contains terminal output from running ./run_kubernetes.sh<br/>
+Dockerfile - contains instructions to build docker image<br/>
+Makefile - installs the dependencies for the project<br/>
+app.py - source code which also contains an additional prediction log statement<br/>
+Make_prediction.sh - sends input data to the containerised port via the port listed<br/>
+Requirements.txt - includes project dependencies<br/>
+Run_docker.sh - contains instructions to run and build the docker image outlined in the Dockerfile<br/>
+Run_kubernetes.sh - deploys the application to kubernetes<br/>
+Upload_docker.sh - uploads the built image to docker<br/>
 
 ### Setup the Environment
 
